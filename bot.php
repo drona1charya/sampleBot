@@ -1,7 +1,7 @@
 <?php
 // parameters
 $hubVerifyToken = 'drona123';
-$accessToken = "EAAD6jZAIpWeUBAOcmqFW7gaZCt9MIw59zXaOymZBHxEYdh2KfzRl2oyMNO1T3dxXt91m0TG8QbiZB30HnTB4ZAABOt8PAq8yZAeG5fAArqqPyHMTRLOWH9nKt4CZBwee0lkPHVHZAuCd8b88fjZC9qMjLZAp5nbsMKjQ5GfGFtyYOcPwZDZD";
+$accessToken = "EAAD6oEaZAeq4BAA9BHxmtSR6slB6SpZB9suDHvftvnASeSFURvHJ7LOJeBwnUul9f6AO69x2xb5ZCVZCZBKQxIQzVLzMQ8vZBOzAiKJ0QCFd6ZA35hrEJvDpR6KZBwqDYgua8LCtlUPEKFwpsvGD6hO9jzqAteviFpISRJpmXt27tAZDZD";
 
 // check token at setup
 if ($_REQUEST['hub_verify_token'] === $hubVerifyToken) {
