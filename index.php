@@ -1,6 +1,9 @@
 $challenge = $_REQUEST['hub_challenge'];
 $verify_token = $_REQUEST['hub_verify_token'];
 
+print($challenge);
+die("df");
+
 if ($verify_token === 'dronfox') {
   echo $challenge;
 }
