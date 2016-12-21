@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-messaging.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCHWh50sJNiJHX6R25CaQJmb-AhSITmba0",
+    authDomain: "onemore-a59a4.firebaseapp.com",
+    databaseURL: "https://onemore-a59a4.firebaseio.com",
+    storageBucket: "onemore-a59a4.appspot.com",
+    messagingSenderId: "655447352249"
+  };
+  firebase.initializeApp(config);
+  const messaging=firebase.messaging();
+  messaging.requestPermission()
+  .then(function()
+  {
+  console.log('Have Permission');
+  return messaging.getToken();
+  
+  })
+  .then(function(token){
+  
+ console.log(token); 
+  })
+  .catch(function(err)
+  {
+  console.log("error");
+  })
+</script>
+</head>
+
+
+<h1>this is working</h1>
+
+</html>
